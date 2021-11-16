@@ -24,6 +24,7 @@ The vest is also equipped with a push button control with a green LED to control
 
   We observe that the blue curve representing the training score is constant in 1. Indeed, this score is calculated using the training data so we had 0% error. However, when we used the test data, we had a fluctuation of score. Indeed, even if we increase the number of decision trees, we will have in some points an over-learning, which means that our model has learned too much the particularities of each data provided. This means that our model has learned too much about the particularities of each of the data provided. It then has a very high success rate on these training data, to the detriment of its general performance.
   ![Optional Text](figures/cross.JPG)
+  
   * we obtained the triangular confusion matrix (see figure below) with 24 of mislabeled values, with an accuracy of 92%
   
   __5. Multi-class classification:__
@@ -34,8 +35,10 @@ The vest is also equipped with a push button control with a green LED to control
   * "2" : Medium
   * "3" : Strong
   ![Optional Text](figures/contacts.JPG)
+  
   __5.2 Multi-Layer perceptrons(MLP) classifier:__
 
   According to the confusion matrix we obtained (see figure below), we observe that it is neither diagonal nor triangular. Indeed, we have several mislabeled values, which leads to an accuracy of 86%.
     ![Optional Text](figures/last.JPG)
+    
   Let's take for example the values 90 and 37, which means that the model is confused between medium and strong contacts. This is due to the fact that the sensors sometimes do not  give the true value of the applied force, and therefore during the labeling process, the medium contacts are considered as strong.
