@@ -25,7 +25,7 @@ The vest is also equipped with a push button control with a green LED to control
   We observe that the blue curve representing the training score is constant in 1. Indeed, this score is calculated using the training data so we had 0% error. However, when we used the test data, we had a fluctuation of score. Indeed, even if we increase the number of decision trees, we will have in some points an over-learning, which means that our model has learned too much the particularities of each data provided. This means that our model has learned too much about the particularities of each of the data provided. It then has a very high success rate on these training data, to the detriment of its general performance.
   ![Optional Text](figures/cross.JPG)
   * we obtained the triangular confusion matrix (see figure below) with 24 of mislabeled values, with an accuracy of 92%
-  ![Optional Text](figures/matrix.JPG)
+  
   __5. Multi-class classification:__
 
   In this one we try to refine our predictions, so that this time we will predict if there is a contact and with what intensity (low,medium,strong). The labeling in this case will be as follows:
